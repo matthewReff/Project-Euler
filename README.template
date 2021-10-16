@@ -1,0 +1,12 @@
+My solutions and explations for [Project Euler]() itself as well as the [Hackerank contest](https://www.hackerrank.com/contests/projecteuler/challenges) that mirrors Project Euler.
+
+# Using The Table:
+
+On the left is the direct link to the original Project Euler page for the problem, in the middle is the link to that same problem hosted on HackerRank. The right is a direct link to my solution in the language that is listed.
+
+If there are multiple entries in different languages, all of them will be shown on seperate rows.
+
+The scripts that I use to generate the README file are in this repo. You can try running them with:
+
+```$ ./generateMarkdown.sh```
+
