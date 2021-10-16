@@ -1,37 +1,43 @@
-#include <iostream>
-#include <vector>
+// https://www.hackerrank.com/contests/projecteuler/challenges/euler002/problem
+// https://projecteuler.net/problem=2
 
+/*
+    Input for Project Euler:
+    1
+    4000000
+*/
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-int main() {
-	vector<int> primes;
-	int sumTotal;
-	long long check = 600851475143;
-	long long highSoFar = 0;
-	bool prime;
-	primes.push_back(2);
-	for (int i = 3; i < 80001;i++) {
-		prime = true;
-		for (int j = 2; j < i; j++) {
-			if (i % j == 0) {
-				prime = false;
-			}
-		}
-		if (prime) {
-			primes.push_back(i);
-			//cout << i << endl;
-		}
-	}
-	highSoFar = primes[0];
-	for (int i = 0; i < primes.size(); i++)
-{
-		if (check % primes[i] == 0)
-		{
-			check = check / primes[i];
-			highSoFar = primes[i];
-		}
-}
-	cout << highSoFar;
-	return 0;
-}
 
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    long long cases;
+    cin >> cases;
+    
+    for(int i = 0; i < cases; i++) {
+        long long n;
+        cin >> n;
+        
+        long long total = 0;
+        long long prevNum1 = 1;
+        long long prevNum2 = 1;    
+        long long newSum;
+        do {
+            newSum = prevNum1 + prevNum2;
+            prevNum2 = prevNum1;
+            prevNum1 = newSum;
+            
+            if(prevNum2 % 2 == 0) {
+                total += prevNum2;
+            }
+        } while(prevNum1 < n) ;
+        cout << total << "\n";
+    }
+    return 0;
+}
