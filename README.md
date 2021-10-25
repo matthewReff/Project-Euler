@@ -14,3 +14,5 @@ The scripts that I use to generate the README file are in this repo. You can try
 |:-------:|:--------:|:--------:|
 |[001](https://www.hackerrank.com/contests/projecteuler/challenges/euler001)|[001](https://projecteuler.net/problem=001)|[C++](https://github.com/matthewReff/Project-Euler/blob/main/001.cpp)|
 |[002](https://www.hackerrank.com/contests/projecteuler/challenges/euler002)|[002](https://projecteuler.net/problem=002)|[C++](https://github.com/matthewReff/Project-Euler/blob/main/002.cpp)|
+|[003](https://www.hackerrank.com/contests/projecteuler/challenges/euler003)|[003](https://projecteuler.net/problem=003)|[C++](https://github.com/matthewReff/Project-Euler/blob/main/003.cpp)|
+|[004](https://www.hackerrank.com/contests/projecteuler/challenges/euler004)|[004](https://projecteuler.net/problem=004)|[C++](https://github.com/matthewReff/Project-Euler/blob/main/004.cpp)|
